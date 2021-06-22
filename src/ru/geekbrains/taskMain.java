@@ -1,12 +1,11 @@
 package ru.geekbrains;
 
-import java.util.SortedMap;
-
 public class taskMain {
 
     public static void main(String[] args) {
-        System.out.println (calc (1,2,4,4));
+        System.out.println(calc(1, 2, 4, 4));
         System.out.println("Hello World");
+        System.out.println(number(12, 3));
         int a = 1;
         char b = 'b';
         byte c = 127;
@@ -20,4 +19,12 @@ public class taskMain {
         return a * (b + (c / d));
     }
 
+    public static boolean number(int a, int b) {
+        return (a + b >= 10 && a + b <= 20);
+    }
+
+
 }
+
+
+
