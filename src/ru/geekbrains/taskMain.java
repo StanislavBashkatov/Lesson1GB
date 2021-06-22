@@ -6,6 +6,7 @@ public class taskMain {
         System.out.println(calc(1, 2, 4, 4));
         System.out.println("Hello World");
         System.out.println(number(12, 3));
+        System.out.println(numberFull(-1));
         int a = 1;
         char b = 'b';
         byte c = 127;
@@ -23,7 +24,9 @@ public class taskMain {
         return (a + b >= 10 && a + b <= 20);
     }
 
-
+    public static boolean numberFull (int a){
+        return a>0;
+    }
 }
 
 
