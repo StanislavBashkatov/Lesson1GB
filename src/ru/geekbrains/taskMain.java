@@ -1,5 +1,7 @@
 package ru.geekbrains;
 
+import java.time.Year;
+
 public class taskMain {
 
     public static void main(String[] args) {
@@ -8,6 +10,7 @@ public class taskMain {
         System.out.println(number(12, 3));
         System.out.println(numberFull(-1));
         hello("Anton");
+        theYear(9);
         int a = 1;
         char b = 'b';
         byte c = 127;
@@ -33,7 +36,11 @@ public class taskMain {
         System.out.println("Hello " + name);
 
     }
+
+    public static void theYear(int year) {
+
+        if ((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0))) System.out.println(year + " год не високосный");
+        else System.out.println(year + " год високосный");
+
+    }
 }
-
-
-
